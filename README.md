@@ -17,9 +17,13 @@
 ## Setup
 
 ### Apple
+```bash
+xcode-select --install
+```
 
-- xcode-select --install
-- softwareupdate --install
+```bash
+softwareupdate --install
+```
 
 ### Package Manager
 
@@ -35,18 +39,13 @@
 
 ### Languages
 
-- [Node](https://nodejs.org/)
-```bash
-brew install nvm
-nvm install node
-```
-- [Ruby](https://www.ruby-lang.org/)
+[Ruby](https://www.ruby-lang.org/)
 ```bash
 brew install rbenv
 rbenv init
 rbenv install 2.5.1  # Latest stable version, 4-19-2018
 ```
-- [Python](https://www.python.org/)
+[Python](https://www.python.org/)
 ```bash
 brew install openssl
 brew install readline
@@ -59,6 +58,7 @@ pyenv install 3.6.2
 ### CLI Tools
 
 - [YADR](https://github.com/skwp/dotfiles/) - Thanks @bkimbriel
+- [Electron](https://electronjs.org/)
 
 ### Path
 
@@ -72,3 +72,13 @@ PATH="$PATH:/usr/local/bin"
 PATH="$PATH:/usr/local/sbin"
 PATH="$PATH:/usr/local/opt"
 ```
+
+### Applications
+
+[Node](https://nodejs.org/)
+```bash
+brew install nvm
+nvm install node
+```
+
+
