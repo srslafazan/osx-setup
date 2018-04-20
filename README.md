@@ -45,24 +45,26 @@ brew install rbenv
 rbenv init
 rbenv install 2.5.1  # Latest stable version, 4-19-2018
 ```
+
 [Python](https://www.python.org/)
 ```bash
 brew install openssl
 brew install readline
-brew install pyenv
-pyenv install 2.7.14
-pyenv install 3.6.2
+brew install python@2  # Python2 is still a common legacy dependency
+brew install python@3
+# You may want to link /usr/local/bin/python3 to /usr/local/bin/python
 ```
 
 
 ### CLI Tools
 
-- [YADR](https://github.com/skwp/dotfiles/) - Thanks @bkimbriel
+- [YADR](https://github.com/skwp/dotfiles/) - Thanks @bkimbriel !
 - [Electron](https://electronjs.org/)
+- [Docker](https://store.docker.com/editions/community/docker-ce-desktop-mac)
 
 ### Path
 
-Link cli tools
+Link CLI tools
 ```
 PATH="$PATH:/bin"
 PATH="$PATH:/sbin"
@@ -77,8 +79,20 @@ PATH="$PATH:/usr/local/opt"
 
 [Node](https://nodejs.org/)
 ```bash
-brew install nvm
+brew install nvm  # Thanks @justinsisley !
 nvm install node
 ```
 
+[PostgreSQL](https://www.postgresql.org/)
+```bash
+brew install postgresql
+```
 
+[MongoDB](https://www.mongodb.com/)
+```bash
+brew install mongodb
+```
+
+## Credits
+
+- Image (https://png.icons8.com)
