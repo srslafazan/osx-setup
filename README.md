@@ -50,10 +50,29 @@ rbenv install 2.5.1  # Latest stable version, 4-19-2018
 ```bash
 brew install openssl
 brew install readline
-brew install python@2  # Python2 is still a common legacy dependency
+brew install python@2  # Python2 is still a common legacy dependency, used in enterprise production apps, etc.
 brew install python@3
 # You may want to link /usr/local/bin/python3 to /usr/local/bin/python
 ```
+
+[Java SE](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+
+- - Also, via Homebrew
+
+```bash
+brew tap caskroom/versions
+brew cask install java8
+```
+
+- Consider [jenv](http://www.jenv.be/) for version management:
+
+```bash
+brew install jenv
+# ... add versions, ex:
+jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/
+```
+
+## SDKs
 
 
 ### CLI Tools
@@ -111,10 +130,6 @@ PATH="$PATH:~/Library/Android/sdk/tools/bin"
 ```
 
 - Consider installing Android SDK Components and Platform Tools, Emulators (AVD Manager)
-
-## SDKs
-
-- [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 ## Credits
 
