@@ -65,7 +65,7 @@ brew install python@3
 ### Path
 
 Link CLI tools
-```
+```bash
 PATH="$PATH:/bin"
 PATH="$PATH:/sbin"
 PATH="$PATH:/usr/bin"
@@ -99,6 +99,15 @@ npm install -g react-native-cli
 # Extras
 brew install watchman
 npm install exp --global
+```
+
+[Android Studio](https://developer.android.com/studio/)
+
+Consider adding the CLI tools to your path:
+
+```bash
+PATH="$PATH:~/Library/Android/sdk/tools"
+PATH="$PATH:~/Library/Android/sdk/tools/bin"
 ```
 
 ## SDKs
