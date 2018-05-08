@@ -93,6 +93,18 @@ brew install postgresql
 brew install mongodb
 ```
 
+[React Native](https://github.com/facebook/react-native)
+```bash
+npm install -g react-native-cli
+# Extras
+brew install watchman
+npm install exp --global
+```
+
+## SDKs
+
+- [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+
 ## Credits
 
 - Image (https://png.icons8.com)
