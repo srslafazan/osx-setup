@@ -103,12 +103,14 @@ npm install exp --global
 
 [Android Studio](https://developer.android.com/studio/)
 
-Consider adding the CLI tools to your path:
+- Consider adding the CLI tools to your path:
 
 ```bash
 PATH="$PATH:~/Library/Android/sdk/tools"
 PATH="$PATH:~/Library/Android/sdk/tools/bin"
 ```
+
+- Consider installing Android SDK Components and Platform Tools, Emulators (AVD Manager)
 
 ## SDKs
 
