@@ -57,7 +57,7 @@ brew install python@3
 
 [Java SE](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
-- - Also, via Homebrew
+- Also, via Homebrew
 
 ```bash
 brew tap caskroom/versions
@@ -72,6 +72,10 @@ brew install jenv
 jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/
 ```
 
+[Go](https://golang.org/)
+```bash
+brew install go
+```
 ## SDKs
 
 
