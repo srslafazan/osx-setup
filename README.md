@@ -131,6 +131,23 @@ PATH="$PATH:~/Library/Android/sdk/tools/bin"
 
 - Consider installing Android SDK Components and Platform Tools, Emulators (AVD Manager)
 
+### Orchestration
+
+- Kubernetes
+[kubectl](https://kubernetes.io/)
+```bash
+# kubectl
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/darwin/amd64/kubectl
+chmod +x ./kubectl
+sudo mv ./kubectl /usr/local/bin/kubectl
+# minikube
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.25.2/minikube-darwin-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+```
+[heml](https://helm.sh/)
+```bash
+brew install kubernetes-helm
+```
+
 ## Credits
 
 - Image (https://png.icons8.com)
