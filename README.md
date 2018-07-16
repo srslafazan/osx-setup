@@ -9,6 +9,10 @@
 </h3>
 
 <p align="center">
+  A collection of tools, applications, and frameworks for developing tools, applications, and frameworks.
+</p>
+
+<p align="center">
   <a href="https://github.com/srslafazan/osx-setup/blob/master/license">
 		<img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat">
   </a>
@@ -25,9 +29,37 @@ xcode-select --install
 softwareupdate --install
 ```
 
-### Package Manager
+### Package Managers
 
 - [Homebrew](https://brew.sh/)
+
+Packages:
+> - openssl
+> - nvm
+> - postgresql
+> - mongodb
+> - watchman
+> - rbenv
+> - jenv
+> - go
+> - readline
+> - python@2
+> - python@3
+
+Casks:
+> - java8
+
+
+- [npm](https://www.npmjs.com/)
+
+Global Packages:
+> - yarn
+> - exp
+> - react-native-cli
+> - http-server
+> - dotenv
+> - truffle
+
 
 ### OS X Applications
 
@@ -155,6 +187,15 @@ curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.25.2/minik
 ```bash
 brew install kubernetes-helm
 ```
+
+# Blockchain
+
+[Ganache](https://truffleframework.com/ganache/)
+[Truffle JS](https://truffleframework.com/)
+```
+npm i -g truffle
+```
+[web3.js](https://github.com/ethereum/web3.js/)
 
 ## Credits
 
