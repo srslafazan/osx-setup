@@ -31,7 +31,7 @@ softwareupdate --install
 
 ### Package Managers
 
-- [Homebrew](https://brew.sh/)
+[Homebrew](https://brew.sh/)
 
 Packages:
 > - openssl
@@ -50,7 +50,7 @@ Casks:
 > - java8
 
 
-- [npm](https://www.npmjs.com/)
+[npm](https://www.npmjs.com/)
 
 Global Packages:
 > - yarn
@@ -191,6 +191,7 @@ brew install kubernetes-helm
 # Blockchain
 
 [Ganache](https://truffleframework.com/ganache/)
+
 [Truffle JS](https://truffleframework.com/)
 ```
 npm i -g truffle
