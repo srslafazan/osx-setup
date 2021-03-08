@@ -18,14 +18,14 @@
   </a>
 </p>
 
+
 ## Setup
 
 ### Apple
-```bash
-xcode-select --install
-```
+
 
 ```bash
+xcode-select --install
 softwareupdate --install
 ```
 
@@ -45,10 +45,36 @@ Packages:
 > - readline
 > - python@2
 > - python@3
+> - mas
+> - --cask adoptopenjdk/openjdk/adoptopenjdk14
 
-Casks:
-> - java8
 
+```bash
+brew tap homebrew/cask-versions
+brew update
+brew tap homebrew/cask
+brew tap mongodb/brew
+brew tap adoptopenjdk/openjdk
+
+
+brew install \
+  openssl \
+  nvm \
+  postgresql \
+  mongodb-community@4.4 \
+  watchman \
+  rbenv \
+  jenv \
+  go \
+  readline \
+  python \
+  python@3
+
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk7
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk14
+
+```
 
 [npm](https://www.npmjs.com/)
 
@@ -82,7 +108,7 @@ rbenv install 2.5.1  # Latest stable version, 4-19-2018
 ```bash
 brew install openssl
 brew install readline
-brew install python@2  # Python2 is still a common legacy dependency, used in enterprise production apps, etc.
+brew install python  # Python2 is still a common legacy dependency, used in enterprise production apps, etc.
 brew install python@3
 # You may want to link /usr/local/bin/python3 to /usr/local/bin/python
 ```
@@ -92,8 +118,10 @@ brew install python@3
 - Also, via Homebrew
 
 ```bash
-brew tap caskroom/versions
-brew cask install java8
+brew tap homebrew/cask-versions
+brew update
+brew tap homebrew/cask
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk14
 ```
 
 - Consider [jenv](http://www.jenv.be/) for version management:
@@ -113,7 +141,6 @@ brew install go
 
 ### CLI Tools
 
-- [YADR](https://github.com/skwp/dotfiles/) - Thanks @bkimbriel !
 - [Electron](https://electronjs.org/)
 - [Docker](https://store.docker.com/editions/community/docker-ce-desktop-mac)
 
@@ -134,8 +161,18 @@ PATH="$PATH:/usr/local/opt"
 
 [Node](https://nodejs.org/)
 ```bash
-brew install nvm  # Thanks @justinsisley !
+brew install nvm
+mkdir ~/.nvm
+echo """
+export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
+""" >> ~/.zshrc
+
+source ~/.zshrc
+
 nvm install node
+nvm install 'lts/*' --reinstall-packages-from=current
+
 ```
 
 [PostgreSQL](https://www.postgresql.org/)
