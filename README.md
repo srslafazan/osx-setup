@@ -35,7 +35,6 @@ softwareupdate --install
 
 Packages:
 > - openssl
-> - nvm
 > - postgresql
 > - mongodb
 > - watchman
@@ -160,6 +159,9 @@ PATH="$PATH:/usr/local/opt"
 ### Applications
 
 [Node](https://nodejs.org/)
+[nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+
 ```bash
 brew install nvm
 mkdir ~/.nvm
@@ -172,7 +174,6 @@ source ~/.zshrc
 
 nvm install node
 nvm install 'lts/*' --reinstall-packages-from=current
-
 ```
 
 [PostgreSQL](https://www.postgresql.org/)
