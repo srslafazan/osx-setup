@@ -96,6 +96,16 @@ Global Packages:
 
 ### Languages
 
+[Rust](https://www.rust-lang.org/tools/install)
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+echo """
+export PATH="$PATH:~/.cargo/bin"
+"""
+source ~/.zshrc
+source ~/$HOME/.cargo/env
+```
+
 [Ruby](https://www.ruby-lang.org/)
 ```bash
 brew install rbenv
