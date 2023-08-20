@@ -180,11 +180,31 @@ PATH="$PATH:/usr/local/sbin"
 PATH="$PATH:/usr/local/opt"
 ```
 
+### Editors
+
+[VSCode](https://code.visualstudio.com/) / [Cursor](https://www.cursor.so/)
+
+Extensions
+- GitLens
+- GitHub Pull Requests and Issues
+- HashiCorp Terraform
+
+[Android Studio](https://developer.android.com/studio/)
+
+- Consider adding the CLI tools to your path:
+
+```bash
+PATH="$PATH:~/Library/Android/sdk/tools"
+PATH="$PATH:~/Library/Android/sdk/tools/bin"
+```
+
+- Consider installing Android SDK Components and Platform Tools, Emulators (AVD Manager)
+
 ### Applications
 
 [Node](https://nodejs.org/)
 [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
+[asdf](https://asdf-vm.com)
 
 ```bash
 brew install nvm
@@ -217,17 +237,6 @@ npm install -g react-native-cli
 brew install watchman
 npm install exp --global
 ```
-
-[Android Studio](https://developer.android.com/studio/)
-
-- Consider adding the CLI tools to your path:
-
-```bash
-PATH="$PATH:~/Library/Android/sdk/tools"
-PATH="$PATH:~/Library/Android/sdk/tools/bin"
-```
-
-- Consider installing Android SDK Components and Platform Tools, Emulators (AVD Manager)
 
 ### Orchestration
 
