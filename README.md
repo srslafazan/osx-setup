@@ -29,6 +29,14 @@ xcode-select --install
 softwareupdate --install
 ```
 
+### Dotfiles
+
+Oh My ZSH
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+
 ### Package Managers
 
 [Homebrew](https://brew.sh/)
