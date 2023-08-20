@@ -206,6 +206,11 @@ PATH="$PATH:~/Library/Android/sdk/tools/bin"
 [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 [asdf](https://asdf-vm.com)
 
+Note for osx bug in asdf install:
+```bash
+echo 'export PATH="$HOME/.asdf/bin:$HOME/.asdf/shims:$PATH"' >> ~/.bash_profile
+```
+
 ```bash
 brew install nvm
 mkdir ~/.nvm
