@@ -36,6 +36,11 @@ softwareupdate --install
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+[YADR](https://nandalopes.github.io/dotfiles/)
+```bash
+sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh `"
+```
+
 
 ### Package Managers
 
